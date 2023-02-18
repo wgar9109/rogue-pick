@@ -53,7 +53,7 @@ p {
 header {
 	display: flex;
 	justify-content: center;
-	height: 33.3%;
+	text-align: center;
 }
 
 header h1 {
@@ -79,13 +79,11 @@ header nav ul li {
 	align-content: center;
 	font-size: 0.9rem;
 	font-weight: 700;
-	text-transform: uppercase;
 	padding: 0 10px;
 }
 
 header nav ul li a {
 	display: flex;
-	text-decoration: capitalize;
 	color: #45610E;
 }
 
@@ -129,7 +127,7 @@ header nav ul li a {
 	align-content: center;
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row wrap;
 }
 
 .section-one {
@@ -150,7 +148,7 @@ header nav ul li a {
 	display: flex;
 	text-align: center;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: inherit;
 }
 
 .menu-list {
@@ -188,10 +186,81 @@ footer span {
 	color: #45610E;
 	font-size: 0.9em;
 }
+/*For Laptops & Desktops*/
+@media screen and (max-width: 1400px) {
+	body {
+		display: flex;
+		min-width: 1200px;
+		flex-flow: row wrap;
+		text-align: center
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap; 
+	}
+
+	h1
+	h2
+	h3
+	h4 {
+		text-align: center;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+
+	}
+
+	.section-one {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 33.3%;
+	}
+
+	.section-two {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 33.3%;
+	}
+
+	.section-three {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		text-align: center;
+		width: 33.3%;
+	}
+	
+.menu-list li {
+	display: flex;
+	justify-content: inherit;
+	text-align: justify;
+}
+
+	.bottom-section 
+	.content-wrapper {
+		text-align: inherit;
+		display: flex;
+		flex-flow: row wrap;
+
+
+	}
+	
+	.content-wrapper {
+		display: flex;
+		max-width: 1400px;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+}
+
 /*For tablets*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 .main-img img {
-	max-width: 800px;
+	min-width: 800px;
 	display: flex;
 	flex-flow: row wrap;
 }
